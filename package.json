@@ -1,0 +1,18 @@
+{
+  "name": "cellscope-3d",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Interactive 3D eukaryotic animal-cell atlas built with Three.js and Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CellScope 3D — Animal Cell Atlas</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app-shell" class="app-shell">
+      <header class="app-header">
+        <div class="brand-group">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <div>
+            <h1 id="app-title" class="app-title">CellScope 3D</h1>
+            <p id="app-subtitle" class="app-subtitle">
+              Interactive Eukaryotic Animal-Cell Atlas
+            </p>
+          </div>
+        </div>
+
+        <div id="header-toolbar-root" class="header-toolbar-root"></div>
+
+        <div class="header-meta">
+          <span id="stage-badge" class="stage-badge">
+            Publication Edition &bull; Interactive 3D Atlas
+          </span>
+        </div>
+      </header>
+
+      <main class="app-workspace">
+        <section
+          id="canvas-container"
+          class="canvas-stage"
+          aria-label="Interactive 3D Eukaryotic Cell Viewport"
+        >
+          <div id="scale-explorer-root"></div>
+          <div id="info-panel-root"></div>
+          <div id="atlas-modals-root"></div>
+
+          <div
+            id="viewport-floating-label"
+            class="floating-3d-label is-hidden"
+            aria-hidden="true"
+          >
+            <span id="floating-label-dot" class="floating-label-dot"></span>
+            <span id="floating-label-text" class="floating-label-text"></span>
+          </div>
+
+          <button
+            id="btn-exit-presentation"
+            type="button"
+            class="btn-exit-presentation is-hidden"
+            aria-label="Exit presentation mode"
+          >
+            Exit Presentation Mode (Esc)
+          </button>
+
+          <div class="viewport-overlay">
+            <span id="viewport-status-pill" class="overlay-pill">
+              Search organelles above, launch the Guided Tour, or click any 3D
+              structure to inspect
+            </span>
+          </div>
+        </section>
+
+        <aside
+          id="sidebar-container"
+          class="control-sidebar"
+          aria-label="Organelle and Viewport Controls"
+        ></aside>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
